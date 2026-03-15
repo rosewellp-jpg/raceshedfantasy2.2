@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Race Shed Fantasy</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">2026 NASCAR Fantasy League</div>
+        <h1>Race Shed Fantasy</h1>
+        <p class="sub">Winner-takes-all. Broadcast-style standings, weekly picks, race results, and next-race intel for the crew.</p>
+        <div class="hero-tags">
+          <span class="tag">10 Players</span>
+          <span class="tag">$5 / Race</span>
+          <span class="tag">Season Long Bragging Rights</span>
+        </div>
+      </div>
+      <div class="hero-race">
+        <div class="panel-accent"></div>
+        <div class="label">Next Race</div>
+        <div id="featuredRaceName" class="race-name"></div>
+        <div id="featuredRaceMeta" class="muted"></div>
+        <div id="featuredRaceBroadcast" class="broadcast"></div>
+      </div>
+    </header>
+
+    <section class="grid top-grid">
+      <div class="card">
+        <div class="card-title-row">
+          <h2>Championship Standings</h2>
+          <div class="tiny-note">After COTA + Phoenix</div>
+        </div>
+        <div id="podium" class="podium"></div>
+        <div id="standings"></div>
+      </div>
+
+      <div class="stack">
+        <div class="card">
+          <h2>League Snapshot</h2>
+          <div id="snapshot" class="stat-grid"></div>
+        </div>
+        <div class="card track-card">
+          <div class="track-art">
+            <div class="oval"></div>
+            <div class="start-finish"></div>
+          </div>
+          <div>
+            <div class="label">Track Breakdown</div>
+            <h2 id="trackTitle">Las Vegas Motor Speedway</h2>
+            <div id="trackFacts" class="fact-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid picks-grid">
+      <div class="card">
+        <div class="card-title-row">
+          <h2>Weekly Picks</h2>
+          <div class="toolbar">
+            <label for="raceSelect">Race</label>
+            <select id="raceSelect"></select>
+          </div>
+        </div>
+        <div id="weeklyPicksCards" class="pick-cards"></div>
+      </div>
+      <div class="card">
+        <div class="card-title-row">
+          <h2>Race Results</h2>
+          <div class="tiny-note">Top finishers shown</div>
+        </div>
+        <div id="raceResultsCards" class="result-cards"></div>
+      </div>
+    </section>
+
+    <section class="grid lower-grid">
+      <div class="card">
+        <h2>2026 Schedule</h2>
+        <div id="schedule"></div>
+      </div>
+      <div class="card">
+        <h2>Race Notes</h2>
+        <div id="raceNotes" class="notes"></div>
+      </div>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
